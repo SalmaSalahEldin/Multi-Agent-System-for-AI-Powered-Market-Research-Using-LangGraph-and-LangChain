@@ -15,7 +15,6 @@ This repository implements a **multi-agent system** designed to automate **marke
 - **Langgraph**: A graph-based tool to model agent-based systems and workflows.
 - **Tavily API**: A web scraping tool used to gather search results for research.
 - **Gradio**: A Python library for building user-friendly interfaces, used here for interaction and progress tracking.
-- **Python Libraries**: `dotenv` for environment variables, `logging` for tracking progress, `os` for file management, and `datetime` for time-based operations.
 
 ## **Workflow**
 1. **Industry/Company Research**: Researches the industry or company based on the user’s input. It provides insights into key trends, competitors, and technology adoption in the selected domain.
@@ -37,7 +36,6 @@ Each agent performs a specific task, and the results are passed between them in 
 
 The entire workflow is managed in a **Gradio interface**, where users can track the progress of each step.
 
-## **Installation**
 
 1. **Clone the repository**:
    ```bash
