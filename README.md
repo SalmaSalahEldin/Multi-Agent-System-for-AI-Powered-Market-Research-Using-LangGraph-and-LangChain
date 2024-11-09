@@ -15,22 +15,40 @@ This repository implements a **multi-agent system** to automate **market researc
 - **Tavily API**: Web scraping for research data.
 - **Gradio**: For building the interactive UI.
 
-## **Workflow**
-1. **User Input**: Provide an industry or company query.
-2. **Research**: The system gathers insights on trends, competitors, and technology adoption.
-3. **Use Case Generation**: AI/ML use cases are created based on the research.
-4. **Resource Collection**: The system identifies datasets, tools, and APIs required to implement the use cases.
-5. **Output**: Results are saved to a file and displayed in the Gradio interface for easy access.
-
 ## **System Workflow**
 
 The diagram below illustrates the flow of actions taken by the multi-agent system. 
+![codetoflow](https://github.com/user-attachments/assets/996c54a7-0208-4f56-a43d-ed87508ed410)
 
-![System Workflow](data/codetoflow.png)
 
-- **User** inputs the query through **Gradio**.
-- **Research** agent performs data gathering.
-- The **Use Case Generation** agent creates actionable AI/ML use cases.
-- The **Resource Collection** agent identifies and collects datasets and tools.
-- Final results are saved to a file and displayed back to the **User**.
+### Input Query:
+- Users enter a query into the **Gradio** interface.
+  - **Example**: "Analyze the e-commerce industry."
+
+#### Step 1: Market Research:
+- The **research_agent**:
+  - Gathers industry/company insights using **GPT-4** and the **TavilySearchResults** tool.
+  - Synthesizes data into a structured output including:
+    - Market trends
+    - Competitor analysis
+    - Quantitative data (e.g., market size, growth rates)
+
+#### Step 2: AI Use Case Generation:
+- The **use_case_agent**:
+  - Takes the research findings as input.
+  - Generates five or more structured use cases, including:
+    - Use case objectives
+    - AI/ML/automation applications
+    - Cross-functional benefits
+
+#### Step 3: Resource Collection:
+- The **resource_agent**:
+  - Maps use cases to actionable resources.
+  - Outputs a detailed list of:
+    - Relevant datasets
+    - APIs, tools, and frameworks
+    - Generative AI solutions (e.g., semantic search tools, chatbots)
+
+#### File Output:
+- Resource outputs are saved as a timestamped **Markdown** file in the **output** directory for easy access and sharing.
 
