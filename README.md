@@ -35,9 +35,3 @@ Each agent performs a specific task, and the results are passed between them in 
 5. All results are saved to a file for future reference.
 
 The entire workflow is managed in a **Gradio interface**, where users can track the progress of each step.
-
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/repository-name.git
-   cd repository-name
