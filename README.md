@@ -1,0 +1,2 @@
+# Multi-Agent-System-for-AI-Powered-Market-Research-Use-Case-Generation-and-Resource-Collection
+A multi-agent system for AI-driven market research, use case generation, and resource collection. It utilizes GPT-4, Gradio, Langchain, Langgraph, and Tavily API to research industries, generate AI/ML use cases, and gather datasets and tools. This system helps organizations explore AI solutions and implement innovative strategies effectively.
