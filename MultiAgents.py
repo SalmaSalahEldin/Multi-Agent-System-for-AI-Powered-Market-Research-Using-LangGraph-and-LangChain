@@ -229,7 +229,7 @@ def multi_agent_workflow(question):
 
 # Define Gradio Interface
 with gr.Blocks() as demo:
-    gr.Markdown("# Multi-Agent Market Research and Use Case Generation")
+    gr.Markdown("# Multi-Agent System for AI-Powered Market Research, Use Case Generation, and Resource Collection")
     query = gr.Textbox(label="Enter Industry or Company Query")
     output = gr.Markdown()
     submit_button = gr.Button("Generate Insights")
