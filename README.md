@@ -22,3 +22,15 @@ This repository implements a **multi-agent system** to automate **market researc
 4. **Resource Collection**: The system identifies datasets, tools, and APIs required to implement the use cases.
 5. **Output**: Results are saved to a file and displayed in the Gradio interface for easy access.
 
+## **System Workflow**
+
+The diagram below illustrates the flow of actions taken by the multi-agent system. 
+
+![System Workflow](data/codetoflow.png)
+
+- **User** inputs the query through **Gradio**.
+- **Research** agent performs data gathering.
+- The **Use Case Generation** agent creates actionable AI/ML use cases.
+- The **Resource Collection** agent identifies and collects datasets and tools.
+- Final results are saved to a file and displayed back to the **User**.
+
