@@ -9,7 +9,6 @@ This project implements a **multi-agent system** to automate **market research**
 - **Gradio Interface**: User-friendly interface for input, progress tracking, and output retrieval.
 
 ## **Technologies Used**
-- **GPT-4**: For generating insights and use cases.
 - **Langchain**: Framework for language model-powered applications.
 - **LangGraph**: Graph-based tool for modeling agent workflows.
 - **Tavily API**: Web scraping for research data.
